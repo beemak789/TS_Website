@@ -79,7 +79,7 @@ const Navbar = () => {
                 style={{ backgroundColor: 'transparent' }}
               >
                 <Link spy={true} smooth={true} duration={500} to='nav'>
-                  <LogoImg src='/logo.jpg'></LogoImg>
+                  <LogoImg src='/logo.png'></LogoImg>
                 </Link>
               </Button>
 

@@ -8,7 +8,7 @@ const AboutMe = () => {
       <Divider style={{ color: '#008080', fontWeight: '100' }}>About</Divider>
 
       <AboutMeSection>
-        <ProfileImg src='/amyElderProfile.jpg' alt='profile-pic'></ProfileImg>
+        <ProfileImg src='/profile.jpg' alt='profile-pic'></ProfileImg>
         <AboutMeParagraphContainer>
           <div className='clinician-header-container'>
             <p className='clinician-name'>Amy Elder MA, CCC-SLP</p>
@@ -50,7 +50,7 @@ const AboutMe = () => {
       </AboutMeSection>
 
       <OurPhilosophyContainer>
-        <FamilyImg src='/workingWithChild.jpg' />
+        <FamilyImg src='/office.jpg' />
         <PhilosophyText>
           <p className='header-2'>
             <b>Our Philosophy</b>
