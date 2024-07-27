@@ -162,7 +162,7 @@ const NavBarContainer = styled.div`
 `;
 
 const ContactInfoContainer = styled.div`
-  background: #008080;
+  background: #01B8D8;
   height: 25px;
   display: flex;
   padding: 0.8rem;
