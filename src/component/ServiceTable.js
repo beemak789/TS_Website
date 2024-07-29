@@ -18,35 +18,6 @@ const theme = createTheme({
 });
 
 const ServiceTable = () => {
-  const createData1 = (services, description) => {
-    return { services, description };
-  };
-
-  const rows1 = [
-    createData1(
-      'What is a Speech-Only Evaluation?',
-      'This evaluation includes an oral motor examination, as well as an articulation and/or motor speech evaluation. The SLP may use both standardized and dynamic assessment measures to determine if the child presents with an articulation, phonological, and/or motor speech disorder such as Apraxia or Dysarthria.',
-      '$200'
-    ),
-    createData1(
-      'What is a Comprehensive Language Evaluation?',
-      'This assessment measures a child’s auditory comprehension and expressive language skills. For older children, this may include literacy skills including phonemic/phonological awareness, reading comprehension and/or writing skills. A comprehensive parent interview and participation is an essential part of this evaluation along with a combination of standardized and dynamic assessment measures. This evaluation may also include an articulation evaluation if needed.',
-      '$350'
-    ),
-  ];
-
-  const createData2 = (question, answer) => {
-    return { question, answer };
-  };
-
-  const rows2 = [
-    createData2(
-      'What forms of payment do we accept?',
-      'Full Bloom Speech Language Pathology offers private pay/self pay services. We are considered an out of network provider and do not bill your insurance. We will provide a superbill upon request. Please call or email for pricing information. We accept HSA/FSA cards, credit/debit, checks or cash as forms of payment.'
-    ),
-  ];
-
-
   const areasOfExpertise1 = [
     'Early Intervention',
     'Late Talkers',
@@ -66,86 +37,7 @@ const ServiceTable = () => {
       <ThemeProvider theme={theme}>
         <TableParent>
           <TableContainer>
-            <TableTitle
-              background='#008080'
-              fontSize='22px'
-              color='white'
-              align='center'
-            >
-              Evaluations
-            </TableTitle>
-
-            <StyledAccordion
-              disableGutters
-              className='eval-process-accordion'
-              style={{ fontSize: '20px' }}
-            >
-              <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                What is the evaluation process?
-              </AccordionSummary>
-
-              <AccordionDetails style={{ padding: '0', fontWeight: '100' }}>
-                <EvaluationProcessContainer>
-                  <p> Free phone consultation</p>
-                  <img
-                    className='arrow-right'
-                    src='/arrow-right.png'
-                    height={30}
-                    width={30}
-                    alt='arrow-right'
-                  />
-                  <p>Complete intake paperwork</p>
-                  <img
-                    className='arrow-right'
-                    src='/arrow-right.png'
-                    height={30}
-                    width={30}
-                    alt='arrow-right'
-                  />
-                  <p>Complete the evaluation</p>
-                  <img
-                    className='arrow-right'
-                    src='/arrow-right.png'
-                    height={30}
-                    width={30}
-                    alt='arrow-right'
-                  />
-                  <p>Review the results and create a plan for treatment</p>
-                </EvaluationProcessContainer>
-              </AccordionDetails>
-            </StyledAccordion>
-
-            {rows1.map((row, idx) => {
-              return (
-                <StyledAccordion
-                  disableGutters
-                  key={idx}
-                  style={{ fontSize: '20px' }}
-                >
-                  <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                    {row.services}
-                  </AccordionSummary>
-
-                  <AccordionDetails style={{ fontWeight: '100' }}>
-                    {row.description}
-                  </AccordionDetails>
-
-                  <Link
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    to='contactUs'
-                    className='request-eval-container'
-                  >
-                    <div>
-                      <button className='button'>Request an Evaluation</button>
-                    </div>
-                  </Link>
-                </StyledAccordion>
-              );
-            })}
-
-            <TableTitle background='#008080' fontSize='22px' color='white'>
+            <TableTitle background='#01b8d8' fontSize='22px' color='white'>
               Areas of Expertise
             </TableTitle>
 
@@ -158,7 +50,7 @@ const ServiceTable = () => {
                       key={idx}
                       style={{ fontWeight: '100', fontSize: 20 }}
                     >
-                      <img src='./star.png' height={18} width={18} alt='star' />
+                      <img src='./star.png' height={20} width={20} alt='star' />
                       <p>{area}</p>
                     </div>
                   );
@@ -181,27 +73,11 @@ const ServiceTable = () => {
               </div>
             </ExpertiseContainer>
 
-            <TableTitle background='#008080' fontSize='22px' color='white'>
+            <TableTitle background='#01b8d8' fontSize='22px' color='white'>
               Payment
             </TableTitle>
 
-            {rows2.map((row, idx) => {
-              return (
-                <StyledAccordion disableGutters key={idx}>
-                  <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
-                    aria-controls='panel1-content'
-                    id='panel1-header'
-                    style={{ fontSize: 20 }}
-                  >
-                    {row.question}
-                  </AccordionSummary>
-                  <AccordionDetails style={{ fontWeight: '100', fontSize: 20 }}>
-                    {row.answer}
-                  </AccordionDetails>
-                </StyledAccordion>
-              );
-            })}
+            <div>Some text here</div>
           </TableContainer>
         </TableParent>
       </ThemeProvider>

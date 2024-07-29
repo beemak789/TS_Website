@@ -1,12 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import Divider from '@mui/material/Divider';
 
 const AboutMe = () => {
   return (
     <AboutMeContainer name='aboutUs'>
-      <Divider style={{ color: '#008080', fontWeight: '100' }}>About</Divider>
-
       <AboutMeSection>
         <ProfileImg src='/profile.jpg' alt='profile-pic'></ProfileImg>
         <AboutMeParagraphContainer>
@@ -69,7 +66,6 @@ const AboutMeContainer = styled.div`
   font-size: 32px;
   font-weight: bold;
   background-color: white;
-  border: 2px solid green;
 `;
 
 const AboutMeSection = styled.div`
@@ -77,7 +73,6 @@ const AboutMeSection = styled.div`
   gap: 1rem;
   padding: 2rem;
   align-items: center;
-  border: 2px solid orange;
   font-size: 40px !important;
 
   @media (min-width: 375px) and (max-width: 768px) {
@@ -105,18 +100,19 @@ const AboutMeParagraphContainer = styled.div`
   flex-direction: column;
 
   .clinician-header-container {
-    font-size: 34px;
+    font-size: 30px;
     text-align: start;
-    color: #8e3e63;
 
     .clinician-name {
       margin: auto;
       margin-left: 1.2rem;
+      color: #01b8d8;
     }
 
     .clinician-title {
-      font-size: 18px;
+      font-size: 16px;
       margin-left: 1rem;
+      color: #01b8d8;
     }
   }
   .paragraph {
@@ -156,9 +152,9 @@ const FamilyImg = styled.img`
 `;
 
 const PhilosophyText = styled.div`
-  font-size: 18px;
+  font-size: 24px;
   padding: 1.2rem;
-  line-height: 16pt;
+  line-height: 22pt;
   font-weight: 100;
   text-align: start;
   margin-left: 1.2rem;
@@ -167,13 +163,13 @@ const PhilosophyText = styled.div`
   .header-2 {
     font-size: 28px;
     text-align: start;
-    color: #8e3e63;
+    color: #01b8d8;
   }
 
   .header-3 {
     font-size: 28px;
     text-align: start;
-    color: #8e3e63;
+    color: #01b8d8;
     margin-top: 4rem;
   }
 

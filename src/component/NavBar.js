@@ -12,7 +12,6 @@ import MenuItem from '@mui/material/MenuItem';
 import { Link } from 'react-scroll';
 import { links } from '../utils/links';
 import styled from 'styled-components';
-import { Icon } from '@iconify/react';
 
 const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = useState(null);
@@ -25,7 +24,6 @@ const Navbar = () => {
     setAnchorElNav(null);
   };
 
-
   return (
     <>
       <AppBar
@@ -35,10 +33,10 @@ const Navbar = () => {
         color='transparent'
       >
         <NavBarContainer>
-          <ContactInfoContainer>
+          {/* <ContactInfoContainer>
             <div>
-              <span>(937)-369-6613</span>
-              <span>amye@fullbloomspeechlanguagepathology.com</span>
+              <span>(330)-757-1302</span>
+              <span>hello@teachingslp.com </span>
               <span></span>
             </div>
 
@@ -64,8 +62,15 @@ const Navbar = () => {
                 </FacebookIcon>
               </a>
             </div>
-          </ContactInfoContainer>
-          <Container maxWidth='xl'>
+          </ContactInfoContainer> */}
+          <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 2 1440 320'>
+            <path
+              fill='#ffd937'
+              fill-opacity='1'
+              d='M0,192L48,202.7C96,213,192,235,288,213.3C384,192,480,128,576,128C672,128,768,192,864,208C960,224,1056,192,1152,170.7C1248,149,1344,139,1392,133.3L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z'
+            ></path>
+          </svg>
+          <Container maxWidth='xl' style={{ position: 'absolute' }}>
             <Toolbar
               disableGutters
               sx={{
@@ -113,7 +118,11 @@ const Navbar = () => {
                   {links.map(
                     (link, idx) =>
                       idx > 0 && (
-                        <MenuItem key={idx} onClick={handleCloseNavMenu} onBlur={handleCloseNavMenu}>
+                        <MenuItem
+                          key={idx}
+                          onClick={handleCloseNavMenu}
+                          onBlur={handleCloseNavMenu}
+                        >
                           <Typography>
                             <Link
                               spy={true}
@@ -162,7 +171,7 @@ const NavBarContainer = styled.div`
 `;
 
 const ContactInfoContainer = styled.div`
-  background: #01B8D8;
+  background: #01b8d8;
   height: 25px;
   display: flex;
   padding: 0.8rem;
@@ -172,7 +181,7 @@ const ContactInfoContainer = styled.div`
     padding: 0.5rem;
     font-size: 15px;
     margin-left: 2rem;
-    font-weight: 100;
+    font-weight: 500;
   }
 
   .facebook-insta-container {
@@ -188,9 +197,10 @@ const ContactInfoContainer = styled.div`
 `;
 
 const LogoImg = styled.img`
-  width: 280px;
-  height: 200px;
+  position: relative;
+  width: 300px;
   margin-left: 1.5rem;
+  top: 30px;
   @media (min-width: 375px) and (max-width: 768px) {
     height: 230px;
     width: 310px;
@@ -199,10 +209,9 @@ const LogoImg = styled.img`
 const NavLinksContainer = styled(Box)`
   width: 100%;
   display: flex;
-  font-size: 24px !important;
   color: black !important;
   justify-content: space-between;
-
+  margin-top: -1rem;
   @media (min-width: 375px) and (max-width: 768px) {
     display: none;
   }
@@ -210,8 +219,9 @@ const NavLinksContainer = styled(Box)`
 
 const StyledLink = styled(Link)`
   color: #26453e;
-  font-family: 'Solway';
-  font-size: 16px;
+  font-family: 'Mulish';
+  font-size: 20px;
+  color:#000068;
 `;
 
 const FacebookIcon = styled.svg`

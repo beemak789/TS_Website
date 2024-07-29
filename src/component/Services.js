@@ -7,12 +7,12 @@ const Services = () => {
   return (
     <ServicesContainer name='services'>
       <ServiceSection>
-        <Divider style={{ color: '#008080', fontWeight: '100', fontSize: '32px' }}>
-          Our Services
+        <Divider
+          style={{ color: '#01b8d8', fontWeight: '300', fontSize: '36px' }}
+        >
+          Services
         </Divider>
-        <h4 className='explore'>
-          Learn more about the services we provide at Full Bloom
-        </h4>
+        <h4 className='explore'>Learn more about my services</h4>
         <ServiceTable />
       </ServiceSection>
     </ServicesContainer>

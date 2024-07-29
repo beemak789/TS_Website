@@ -4,7 +4,7 @@ export const links = [
   },
   {
     to: 'aboutUs',
-    name: 'About Us',
+    name: 'About Me',
   },
   {
     to: 'services',
@@ -16,12 +16,8 @@ export const links = [
     name: 'Resources',
   },
   {
-    to: 'testimonials',
-    name: 'Testimonials',
-  },
-  {
     to: 'contactUs',
-    name: 'Contact Us',
+    name: 'Contact Me',
   },
 
 ];
