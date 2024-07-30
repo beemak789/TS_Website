@@ -83,7 +83,7 @@ const AboutMeSection = styled.div`
 `;
 
 const ProfileImg = styled.img`
-  width: 30%;
+  width: 36%;
   border-radius: 5px;
   margin-top: -0.5rem;
   padding: 1.5rem;
@@ -139,7 +139,7 @@ const OurPhilosophyContainer = styled.div`
 `;
 
 const FamilyImg = styled.img`
-  width: 30%;
+  width: 36%;
   border: 2px;
   border-radius: 5px;
   padding: 1.5rem;
