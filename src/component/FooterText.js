@@ -11,10 +11,13 @@ const FooterText = () => {
 
 export default FooterText;
 
+
+
 const FooterTextContainer = styled.div`
-  background-color: #008080;
   position: absolute;
   width: 100%;
-  color: white;
+  color: black;
   text-align: center;
+  font-size: 18px;
+  background-color: #FFD937;
 `;

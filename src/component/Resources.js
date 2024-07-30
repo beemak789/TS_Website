@@ -10,7 +10,7 @@ const Resources = () => {
   return (
     <ResourcesContainer name='resources'>
       <Divider
-        style={{ color: '#008080', fontWeight: '100', fontSize: '32px' }}
+        style={{ color: '#01b8d8', fontWeight: '200px', fontSize: '34px', }}
       >
         Resources
       </Divider>
@@ -155,7 +155,7 @@ const ResourceBox = styled.div`
   max-width: 95%;
 
   .resource-header {
-    color: #8e3e63;
+    color: #01b8d8;
     font-size: 22px;
     font-weight: 500;
   }

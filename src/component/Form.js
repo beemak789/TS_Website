@@ -23,21 +23,21 @@ const Form = () => {
     setIsLoading(true);
     try {
       e.preventDefault();
-      await fetch('https://yik3q4romd.execute-api.us-east-1.amazonaws.com/dev/contact-form', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          Accept: '*/*'
-        },
-        body: JSON.stringify({
-          name,
-          senderEmail: email,
-          receiverEmail: 'amye@fullbloomspeechlanguagepathology.com',
-          phoneNumber,
-          message
-        }),
-      });
-
+      // await fetch('https://yik3q4romd.execute-api.us-east-1.amazonaws.com/dev/contact-form', {
+      //   method: 'POST',
+      //   headers: {
+      //     'Content-Type': 'application/json',
+      //     Accept: '*/*'
+      //   },
+      //   body: JSON.stringify({
+      //     name,
+      //     senderEmail: email,
+      //     receiverEmail: 'amye@fullbloomspeechlanguagepathology.com',
+      //     phoneNumber,
+      //     message
+      //   }),
+      // });
+      console.log('submitted');
       setIsSubmitted(true);
       setIsLoading(false);
     } catch (error) {
@@ -49,7 +49,7 @@ const Form = () => {
 
   return (
     <FormContainer onSubmit={submitForm}>
-      <h3>Request an Evaluation</h3>
+      <h2 style={{ color: '#01b8d8' }}>Contact Me</h2>
 
       <img src='/request.png' alt='request' height={50} width={50} />
       <InputFieldContainer>
@@ -108,7 +108,7 @@ const Form = () => {
         className='submit-button'
         variant='contained'
         type='submit'
-        style={{ marginTop: '2rem', background: '#8e3e63', color: 'white' }}
+        style={{ marginTop: '2rem', background: '#FFD937', color: 'dark blue', fontFamily: 'Mulish' }}
         disabled={!name || !email || !phoneNumber || !message}
       >
         Submit

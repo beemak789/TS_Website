@@ -8,11 +8,10 @@ const Services = () => {
     <ServicesContainer name='services'>
       <ServiceSection>
         <Divider
-          style={{ color: '#01b8d8', fontWeight: '300', fontSize: '36px' }}
+          style={{ color: '#01b8d8', fontWeight: '300', fontSize: '36px', marginBottom: '2rem' }}
         >
           Services
         </Divider>
-        <h4 className='explore'>Learn more about my services</h4>
         <ServiceTable />
       </ServiceSection>
     </ServicesContainer>

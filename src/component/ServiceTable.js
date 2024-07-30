@@ -3,10 +3,6 @@ import TableContainer from '@mui/material/TableContainer';
 import { createTheme, ThemeProvider } from '@mui/material';
 import styled from 'styled-components';
 import Accordion from '@mui/material/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { Link } from 'react-scroll';
 
 const theme = createTheme({
   typography: {
@@ -19,17 +15,19 @@ const theme = createTheme({
 
 const ServiceTable = () => {
   const areasOfExpertise1 = [
-    'Early Intervention',
-    'Late Talkers',
-    'Articulation Disorders',
-    'Receptive and Expressive Language Disorders',
+    'Early Intervention Play Groups',
+    'Parent Coaching',
+    'Speech Sound Disorders - Articulation, Phonological',
+    'Childhood Apraxia of Speech',
+    'Receptive Language Disorders',
   ];
 
   const areasOfExpertise2 = [
-    'Childhood Apraxia of Speech',
-    'Phonological Disorders',
-    'Literacy',
-    'Gestalt Language Development',
+    'Expressive Language Disorders',
+    'Fluency/Stuttering',
+    'Language Delays',
+    'Teletherapy',
+    'Neurodiversity Affirming Social Groups',
   ];
 
   return (
@@ -74,10 +72,24 @@ const ServiceTable = () => {
             </ExpertiseContainer>
 
             <TableTitle background='#01b8d8' fontSize='22px' color='white'>
-              Payment
+              Location
             </TableTitle>
+            <LocationContainer>
+              <div className='location-bullet'>
+                <img src='/check.png' height={18} width={18} alt='check' />{' '}
+                Mobile Therapist serving Medina, OH and surrounding areas{' '}
+              </div>
 
-            <div>Some text here</div>
+              <div className='location-bullet'>
+                <img src='/check.png' height={18} width={18} alt='check' />{' '}
+                Individualized Treatment and Evaluation
+              </div>
+
+              <div className='location-bullet'>
+                <img src='/check.png' height={18} width={18} alt='check' />{' '}
+                Availability - Weekdays and Weekends
+              </div>
+            </LocationContainer>
           </TableContainer>
         </TableParent>
       </ThemeProvider>
@@ -97,6 +109,24 @@ const TableParent = styled.div`
   justify-content: center;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+`;
+
+const LocationContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 100;
+  gap: 2rem;
+  margin: 2rem;
+
+  .location-bullet {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    text-align: start;
+  }
 `;
 
 const ExpertiseContainer = styled.div`

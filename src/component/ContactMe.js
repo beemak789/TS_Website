@@ -18,49 +18,40 @@ const ContactMe = () => {
       <ContactMeContainer name='contactUs'>
         <Divider
           style={{
-            color: '#008080',
-            fontWeight: '100',
-            fontSize: '32px',
+            color: '#01b8d8',
+            fontWeight: '200',
+            fontSize: '34px',
             width: '100%',
           }}
         >
           Contact Us
         </Divider>
 
-        <h1>Get in touch with us today.</h1>
+        <h1 style={{ color: '#000068' }}>Get in touch with us today.</h1>
 
         <ContactTextboxContainer>
           <GetInTouch>
             <img src='/email.png' alt='email-icon' height={50} width={50} />
 
             <p className='interested-in-speech'>
-              Interested in speech therapy? Contact us to learn about the
-              services we provide and have any questions answered.
+              Call or email today for more information.
+            </p>
+
+            <p className='interested-in-speech'>
+              Free 15-minute consultation
             </p>
 
             <ContactDetailsContainer>
               <NumberEmailContainer>
                 <div className='info'>
                   <img src='/phone.png' height={28} width={28} alt='' />
-                  <p>(937)-369-6613</p>
+                  <p style={{ color: '#01b8d8' }}>(330)-757-1302</p>
                 </div>
                 <div className='info email'>
                   <img src='/mail.png' height={28} width={28} alt='' />
-                  <p>amye@fullbloomspeechlanguagepathology.com</p>
+                  <p style={{ color: '#01b8d8' }}>hello@teachingslp.com</p>
                 </div>
               </NumberEmailContainer>
-              <AddressContainer>
-                <a href='https://www.google.com/maps/place/17111+Kenton+Dr+%23206b,+Cornelius,+NC+28031/@35.4492384,-80.8899337,17z/data=!3m1!4b1!4m5!3m4!1s0x8856a92fb6b4db01:0x80234f9b85d475a4!8m2!3d35.4492384!4d-80.8899337?entry=ttu' target='_blank' rel="noreferrer">
-                  {' '}
-                  <img src='/map.png' height={28} width={28} alt=''/>
-                </a>
-
-                <div className='address'>
-                  <p>Kenton Place</p>
-                  <p>17111 Kenton Drive Suite 206B</p>
-                  <p>Cornelius, NC 28031</p>
-                </div>
-              </AddressContainer>
             </ContactDetailsContainer>
           </GetInTouch>
 
@@ -104,6 +95,7 @@ const NumberEmailContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 28px;
 
   .info {
     display: flex;
@@ -113,6 +105,7 @@ const NumberEmailContainer = styled.div`
   }
 
   .info.email {
+    color: #01b8d8 !important;
     @media (min-width: 375px) and (max-width: 768px) {
       font-size: 13px;
     }
@@ -134,9 +127,8 @@ const ContactDetailsContainer = styled.div`
 
 const GetInTouch = styled.div`
   text-align: center;
-  font-size: 18px;
+  font-size: 26px;
   width: 50%;
-  margin: auto;
   margin-top: 2rem;
 
   p {
@@ -144,7 +136,9 @@ const GetInTouch = styled.div`
   }
 
   .interested-in-speech {
-    padding: 1.5rem;
+    padding: 1rem;
+    color: #01b8d8;
+    font-weight: 700;
 
     @media (min-width: 375px) and (max-width: 768px) {
       font-size: 18px;

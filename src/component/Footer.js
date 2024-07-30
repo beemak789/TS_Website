@@ -23,7 +23,7 @@ const Footer = () => {
             <Link spy={true} smooth={true} duration={500} to='nav'>
               <LogoImage
                 className='nav-leaf-icon'
-                src='/logo.jpg'
+                src='/white-slp-logo.png'
                 alt='leafIcon logo'
                 width={270}
                 height={200}
@@ -80,53 +80,20 @@ const Footer = () => {
           <h3>Contact Us</h3>
 
           <IconContainers>
-            <a href='https://www.instagram.com/fullbloomslp?igsh=cDNhNncydmVpejZr'>
+            <a href='https://www.instagram.com/teachingslp?igsh=ZXp2bnp0bGlyZGlz'>
               {' '}
               <Icon icon='skill-icons:instagram' />
             </a>
 
-            <a href='https://www.facebook.com/profile.php?id=61560669335136'>
-              {' '}
-              <FacebookIcon
-                xmlns='http://www.w3.org/2000/svg'
-                viewBox='0 0 256 256'
-              >
-                <path
-                  fill='#1877f2'
-                  d='M256 128C256 57.308 198.692 0 128 0S0 57.308 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.348-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.959 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445'
-                ></path>
-                <path
-                  fill='#fff'
-                  d='m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A129 129 0 0 0 128 256a129 129 0 0 0 20-1.555V165z'
-                ></path>
-              </FacebookIcon>
-            </a>
           </IconContainers>
-
-          <div className='address-container'>
-            <a
-              href='https://www.google.com/maps/place/17111+Kenton+Dr+%23206b,+Cornelius,+NC+28031/@35.4492384,-80.8899337,17z/data=!3m1!4b1!4m5!3m4!1s0x8856a92fb6b4db01:0x80234f9b85d475a4!8m2!3d35.4492384!4d-80.8899337?entry=ttu'
-              target='_blank'
-              rel='noreferrer'
-            >
-              {' '}
-              <img src='/map.png' height={12} width={12} alt='' />
-            </a>
-
-            <div className='address'>
-              <p>Kenton Place</p>
-              <p>17111 Kenton Drive Suite 206B</p>
-              <p>Cornelius, NC 28031</p>
-            </div>
-          </div>
 
           <div className='info'>
             <img src='/phone.png' height={12} width={12} alt='' />
-            <p>(937)-369-6613</p>
+            <p>(330)-757-1302</p>
           </div>
           <div className='info'>
             <img src='/mail.png' height={12} width={12} alt='' />
-            <p>amye@fullbloomspeechlanguagepathology.com</p>
+            <p>hello@teachingslp.com </p>
           </div>
         </ContactInfoContainer>
       </FooterContent>
@@ -141,20 +108,16 @@ const FooterContainer = styled.footer`
   display: flex;
   flex-direction: column;
   background: white;
-  bottom: 0px;
   text-align: center;
-  margin: 0;
-  padding: 10px;
-  bottom: 0px;
-  align-items: center;
+  padding: 8px;
 `;
 
 const FooterContent = styled.div`
   display: flex;
   color: #008080;
   width: 100%;
-  justify-content: space-between;
   margin: auto;
+  justify-content: space-between;
 
   .logo-socials {
     display: flex;
@@ -189,9 +152,10 @@ const QuickLinksContainer = styled.div`
   display: flex;
   flex-direction: column;
   line-height: 1pt;
-  color: #8e3e63;
+  color: #01b8d8;
   margin-top: 3rem;
   margin-bottom: -2rem;
+  font-size: 18px;
 
   .link:hover {
     cursor: pointer;
@@ -213,7 +177,10 @@ const ContactInfoContainer = styled.div`
   display: flex;
   flex-direction: column;
   text-align: start;
-  padding: 1rem;
+  padding: 2rem;
+  font-size: 20px;
+  margin: 1rem;
+  color: #01b8d8;
 
   @media (min-width: 375px) and (max-width: 768px) {
     display: flex;
@@ -225,7 +192,7 @@ const ContactInfoContainer = styled.div`
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    font-size: 14px;
+    font-size: 18px;
     color: black;
     line-height: 2pt;
   }
