@@ -72,6 +72,20 @@ const ServiceTable = () => {
             </ExpertiseContainer>
 
             <TableTitle background='#01b8d8' fontSize='22px' color='white'>
+              Payment
+            </TableTitle>
+
+            <PaymentContainer>
+              Teaching SLP operates as a private pay practice. We require full
+              payment at the time of service and do not accept insurance,
+              classifying us as an “out-of-network” provider. However, upon
+              request, we can provide a superbill for you to seek reimbursement
+              from your insurance provider. Feel free to call us today to
+              discuss key questions to ask your insurance provider about
+              out-of-network services.
+            </PaymentContainer>
+
+            <TableTitle background='#01b8d8' fontSize='22px' color='white'>
               Location
             </TableTitle>
             <LocationContainer>
@@ -109,6 +123,16 @@ const TableParent = styled.div`
   justify-content: center;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+`;
+
+const PaymentContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 100;
+  gap: 2rem;
+  margin: 2rem;
 `;
 
 const LocationContainer = styled.div`
