@@ -25,7 +25,7 @@ const ContactMe = () => {
             width: '100%',
           }}
         >
-          Contact Us
+          Contact Me
         </Divider>
 
         <ConsultContactMeContainer>
