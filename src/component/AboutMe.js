@@ -54,6 +54,7 @@ const AboutMe = () => {
           </p>
         </PhilosophyText>
       </OurPhilosophyContainer>
+
     </AboutMeContainer>
   );
 };

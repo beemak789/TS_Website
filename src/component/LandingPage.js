@@ -13,6 +13,7 @@ const LandingPage = () => {
     <>
       <Navbar />
       <AboutMe />
+
       <Services />
 
       <Resources />
