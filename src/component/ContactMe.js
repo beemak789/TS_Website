@@ -89,6 +89,7 @@ const ContactMeContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin-bottom: 3rem;
+  padding: 2rem;
 
   h1 {
     font-weight: 100;
