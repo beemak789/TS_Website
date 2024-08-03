@@ -131,7 +131,6 @@ const Resources = () => {
 export default Resources;
 
 const ResourcesContainer = styled.div`
-  padding: 2rem;
   h2 {
     font-size: 35px;
     font-weight: 300;
