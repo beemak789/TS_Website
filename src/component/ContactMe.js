@@ -3,6 +3,7 @@ import Form from './Form';
 import styled from 'styled-components';
 import { createTheme, ThemeProvider } from '@mui/material';
 import Divider from '@mui/material/Divider';
+import { Icon } from '@iconify/react';
 
 const theme = createTheme({
   typography: {
@@ -27,24 +28,38 @@ const ContactMe = () => {
           Contact Us
         </Divider>
 
-        <h1 style={{ color: '#000068' }}>Get in touch with us today.</h1>
+        <ConsultContactMeContainer>
+          <ContactTextboxContainer>
+            <Form />
 
-        <ContactTextboxContainer>
-          <GetInTouch>
-            <img src='/email.png' alt='email-icon' height={50} width={50} />
+          </ContactTextboxContainer>
 
-            <p className='interested-in-speech'>
-              Call or email today for more information.
+          <FreeConsultContainer>
+
+            <p className='consult-text'>
+            <h1>Free Consultation</h1>
+              We provide complimentary 15-minute phone consultations for new
+              clients. During this call, you can share details about your child,
+              ask questions regarding their speech, language, or learning
+              development, and discuss scheduling an initial appointment.
             </p>
+            <Divider/>
 
-            <p className='interested-in-speech'>
-              Free 15-minute consultation
-            </p>
 
             <ContactDetailsContainer>
               <NumberEmailContainer>
+                <h3>Contact Information</h3>
+                <a
+                  className='instagram-icon'
+                  href='https://www.instagram.com/teachingslp?igsh=ZXp2bnp0bGlyZGlz'
+                >
+                  {' '}
+                  <Icon icon='skill-icons:instagram' target='_blank' />
+                  <p>Instagram</p>
+                </a>
+
                 <div className='info'>
-                  <img src='/phone.png' height={28} width={28} alt='' />
+                  <img src='/phone.png' height={20} width={20} alt='' />
                   <p style={{ color: '#01b8d8' }}>(330)-757-1302</p>
                 </div>
                 <div className='info email'>
@@ -53,10 +68,9 @@ const ContactMe = () => {
                 </div>
               </NumberEmailContainer>
             </ContactDetailsContainer>
-          </GetInTouch>
 
-          <Form />
-        </ContactTextboxContainer>
+          </FreeConsultContainer>
+        </ConsultContactMeContainer>
       </ContactMeContainer>
     </ThemeProvider>
   );
@@ -64,10 +78,14 @@ const ContactMe = () => {
 
 export default ContactMe;
 
+const ConsultContactMeContainer = styled.div`
+  display: flex;
+  gap: 2rem;
+`;
+
 const ContactMeContainer = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin-bottom: 3rem;
 
   h1 {
@@ -79,11 +97,28 @@ const ContactMeContainer = styled.div`
   }
 `;
 
+const FreeConsultContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 2rem;
+  font-size: 20px;
+  text-align: center;
+  margin-top: -2rem;
+
+  .consult-text {
+    color: #0e0e55;
+    padding: 5rem;
+  }
+`;
+
 const ContactTextboxContainer = styled.div`
   display: flex;
-  gap: 2rem;
-  margin-top: 2rem;
-  justify-content: space-between;
+  flex-direction: column;
+  margin: 2rem;
+  padding: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 
   @media (min-width: 375px) and (max-width: 768px) {
     display: flex;
@@ -94,8 +129,16 @@ const ContactTextboxContainer = styled.div`
 const NumberEmailContainer = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  font-size: 28px;
+  align-items: start;
+  font-size: 18px;
+
+  .instagram-icon {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #01b8d8;
+  }
 
   .info {
     display: flex;
@@ -121,50 +164,9 @@ const ContactDetailsContainer = styled.div`
   flex-direction: column;
   align-items: center;
   margin: auto;
+  padding: 1rem;
   font-size: 18px;
   width: 100%;
+  color: #0e0e55;
 `;
 
-const GetInTouch = styled.div`
-  text-align: center;
-  font-size: 26px;
-  width: 50%;
-  margin-top: 2rem;
-
-  p {
-    color: #008080;
-  }
-
-  .interested-in-speech {
-    padding: 1rem;
-    color: #01b8d8;
-    font-weight: 700;
-
-    @media (min-width: 375px) and (max-width: 768px) {
-      font-size: 18px;
-    }
-  }
-
-  @media (min-width: 375px) and (max-width: 768px) {
-    font-size: 14px;
-    width: 90%;
-    margin: auto;
-  }
-`;
-
-const AddressContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 0.5rem;
-  justify-content: center;
-
-  .address {
-    line-height: 3pt;
-    text-align: start;
-    font-size: 18px;
-    @media (min-width: 375px) and (max-width: 768px) {
-      font-size: 15px;
-    }
-  }
-`;

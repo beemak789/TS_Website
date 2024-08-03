@@ -49,7 +49,7 @@ const Form = () => {
 
   return (
     <FormContainer onSubmit={submitForm}>
-      <h2 style={{ color: '#01b8d8' }}>Contact Me</h2>
+      <h2 style={{ color: '#01b8d8' }}>Send a Message</h2>
 
       <img src='/request.png' alt='request' height={50} width={50} />
       <InputFieldContainer>

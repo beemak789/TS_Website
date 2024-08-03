@@ -22,7 +22,7 @@ const AboutMe = () => {
               years of experience working with children with speech sound
               disorders, autism, fluency, developmental disabilities, receptive
               and expressive language disorders, language delay, and early
-              intervention services. I specialize in speech sounds disorders,
+              intervention services. I specialize in speech sounds disorders and early intervention,
               and I am proudly a neurodiversity-affirming therapist! In my free
               time, I love spending time with my family and friends, cooking,
               trying local restaurants, and traveling!

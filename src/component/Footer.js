@@ -76,26 +76,6 @@ const Footer = () => {
           </Link>
         </QuickLinksContainer>
 
-        <ContactInfoContainer>
-          <h3>Contact Us</h3>
-
-          <IconContainers>
-            <a href='https://www.instagram.com/teachingslp?igsh=ZXp2bnp0bGlyZGlz'>
-              {' '}
-              <Icon icon='skill-icons:instagram' />
-            </a>
-
-          </IconContainers>
-
-          <div className='info'>
-            <img src='/phone.png' height={12} width={12} alt='' />
-            <p>(330)-757-1302</p>
-          </div>
-          <div className='info'>
-            <img src='/mail.png' height={12} width={12} alt='' />
-            <p>hello@teachingslp.com </p>
-          </div>
-        </ContactInfoContainer>
       </FooterContent>
     </FooterContainer>
   );
@@ -117,7 +97,8 @@ const FooterContent = styled.div`
   color: #008080;
   width: 100%;
   margin: auto;
-  justify-content: space-between;
+  justify-content: space-around;
+
 
   .logo-socials {
     display: flex;

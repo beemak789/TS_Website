@@ -10,7 +10,7 @@ const Resources = () => {
   return (
     <ResourcesContainer name='resources'>
       <Divider
-        style={{ color: '#01b8d8', fontWeight: '200px', fontSize: '34px', }}
+        style={{ color: '#01b8d8', fontWeight: '200px', fontSize: '34px' }}
       >
         Resources
       </Divider>
@@ -113,12 +113,11 @@ const Resources = () => {
                   {' '}
                   <a
                     className='link'
-                    href='https://www.autismspeaks.org/
-'
+                    href='autismsociety.org'
                     target='_blank'
                     rel='noreferrer'
                   >
-                    Autism Speaks
+                    Autism Society
                   </a>
                 </li>
               </StyledList>
