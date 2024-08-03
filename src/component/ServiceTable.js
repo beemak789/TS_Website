@@ -86,7 +86,7 @@ const ServiceTable = () => {
             </PaymentContainer>
 
             <TableTitle background='#01b8d8' fontSize='22px' color='white'>
-              Location
+              Location and Availability
             </TableTitle>
             <LocationContainer>
               <div className='location-bullet'>
@@ -102,6 +102,11 @@ const ServiceTable = () => {
               <div className='location-bullet'>
                 <img src='/check.png' height={18} width={18} alt='check' />{' '}
                 Availability - Weekdays and Weekends
+              </div>
+
+              <div className='location-bullet'>
+                <img src='/check.png' height={18} width={18} alt='check' />{' '}
+                Online therapy avaialble to clients anywhere in Ohio
               </div>
             </LocationContainer>
           </TableContainer>

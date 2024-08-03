@@ -64,8 +64,7 @@ const Resources = () => {
 
                 <li>
                   {' '}
-                  Pragmatics: Improving social communication skills, including
-                  turn-taking, eye contact, and understanding social cues.
+                  Pragmatics: Self-advocacy and body autonomy, Perspective-taking, Self-regulation and self-awareness, problem solving and figurative language.
                 </li>
 
                 <li>
@@ -174,6 +173,6 @@ const StyledList = styled.ul`
   }
 
   a:hover {
-    color: #8e3e63;
+    color: #01b8d8;
   }
 `;

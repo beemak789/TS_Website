@@ -123,12 +123,6 @@ const LogoImage = styled.img`
   }
 `;
 
-const FacebookIcon = styled.svg`
-  height: 1em;
-  width: 1.2em;
-  margin-top: -0.2rem;
-`;
-
 const QuickLinksContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -140,7 +134,7 @@ const QuickLinksContainer = styled.div`
 
   .link:hover {
     cursor: pointer;
-    color: #008080;
+    color: #ffd937;
   }
 
   @media (min-width: 375px) and (max-width: 768px) {
