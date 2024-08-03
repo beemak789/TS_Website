@@ -156,6 +156,11 @@ const LocationContainer = styled.div`
     gap: 1rem;
     text-align: start;
   }
+
+  @media (min-width: 375px) and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 const ExpertiseContainer = styled.div`

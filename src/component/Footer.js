@@ -75,7 +75,6 @@ const Footer = () => {
             <p>Contact</p>
           </Link>
         </QuickLinksContainer>
-
       </FooterContent>
     </FooterContainer>
   );
@@ -99,7 +98,6 @@ const FooterContent = styled.div`
   margin: auto;
   justify-content: space-around;
 
-
   .logo-socials {
     display: flex;
     flex-direction: column;
@@ -108,19 +106,13 @@ const FooterContent = styled.div`
   }
 
   @media (min-width: 375px) and (max-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: none;
   }
 `;
 
 const LogoImage = styled.img`
   margin-left: 2rem;
   margin-top: 3rem;
-
-  @media (min-width: 375px) and (max-width: 768px) {
-    display: none;
-  }
 `;
 
 const QuickLinksContainer = styled.div`
@@ -135,10 +127,6 @@ const QuickLinksContainer = styled.div`
   .link:hover {
     cursor: pointer;
     color: #ffd937;
-  }
-
-  @media (min-width: 375px) and (max-width: 768px) {
-    display: none;
   }
 `;
 

@@ -31,20 +31,17 @@ const ContactMe = () => {
         <ConsultContactMeContainer>
           <ContactTextboxContainer>
             <Form />
-
           </ContactTextboxContainer>
 
           <FreeConsultContainer>
-
             <p className='consult-text'>
-            <h1>Free Consultation</h1>
+              <h1>Free Consultation</h1>
               We provide complimentary 15-minute phone consultations for new
               clients. During this call, you can share details about your child,
               ask questions regarding their speech, language, or learning
               development, and discuss scheduling an initial appointment.
             </p>
-            <Divider/>
-
+            <Divider />
 
             <ContactDetailsContainer>
               <NumberEmailContainer>
@@ -68,7 +65,6 @@ const ContactMe = () => {
                 </div>
               </NumberEmailContainer>
             </ContactDetailsContainer>
-
           </FreeConsultContainer>
         </ConsultContactMeContainer>
       </ContactMeContainer>
@@ -80,7 +76,13 @@ export default ContactMe;
 
 const ConsultContactMeContainer = styled.div`
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
+  width: 100%;
+
+  @media (min-width: 375px) and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 const ContactMeContainer = styled.div`
@@ -93,6 +95,8 @@ const ContactMeContainer = styled.div`
     text-align: center;
     @media (min-width: 375px) and (max-width: 768px) {
       padding: 2rem;
+      display: flex;
+      flex-direction: column;
     }
   }
 `;
@@ -100,15 +104,26 @@ const ContactMeContainer = styled.div`
 const FreeConsultContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 40%;
-  padding: 2rem;
   font-size: 20px;
   text-align: center;
-  margin-top: -2rem;
+  width: 40%;
 
   .consult-text {
     color: #0e0e55;
     padding: 5rem;
+
+    @media (min-width: 375px) and (max-width: 768px) {
+      margin-top: 0;
+      padding: 2rem;
+    }
+  }
+
+  @media (min-width: 375px) and (max-width: 768px) {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    width: 90%;
   }
 `;
 
@@ -119,10 +134,12 @@ const ContactTextboxContainer = styled.div`
   padding: 1rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  margin-top: 7rem;
 
   @media (min-width: 375px) and (max-width: 768px) {
     display: flex;
     flex-direction: column;
+    margin-top: 2rem;
   }
 `;
 
@@ -150,12 +167,13 @@ const NumberEmailContainer = styled.div`
   .info.email {
     color: #01b8d8 !important;
     @media (min-width: 375px) and (max-width: 768px) {
-      font-size: 13px;
+      font-size: 18px;
     }
   }
 
   @media (min-width: 375px) and (max-width: 768px) {
-    width: 100%;
+    display: flex;
+    align-items: center;
   }
 `;
 
@@ -169,4 +187,3 @@ const ContactDetailsContainer = styled.div`
   width: 100%;
   color: #0e0e55;
 `;
-
