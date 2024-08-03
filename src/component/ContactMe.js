@@ -76,9 +76,8 @@ export default ContactMe;
 
 const ConsultContactMeContainer = styled.div`
   display: flex;
-  gap: 3rem;
+  gap: 4rem;
   width: 100%;
-
   @media (min-width: 375px) and (max-width: 768px) {
     display: flex;
     flex-direction: column;
@@ -105,6 +104,7 @@ const ContactMeContainer = styled.div`
 const FreeConsultContainer = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
   font-size: 20px;
   text-align: center;
   width: 40%;
@@ -112,6 +112,8 @@ const FreeConsultContainer = styled.div`
   .consult-text {
     color: #0e0e55;
     padding: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 
     @media (min-width: 375px) and (max-width: 768px) {
       margin-top: 0;
@@ -131,11 +133,9 @@ const FreeConsultContainer = styled.div`
 const ContactTextboxContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 2rem;
-  padding: 1rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-  margin-top: 7rem;
+  margin-top: 3rem;
 
   @media (min-width: 375px) and (max-width: 768px) {
     display: flex;

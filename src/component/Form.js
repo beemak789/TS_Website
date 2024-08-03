@@ -48,7 +48,7 @@ const Form = () => {
   };
 
   return (
-    <FormContainer onSubmit={submitForm}>
+    <FormContainer onSubmit={submitForm} className='form-container'>
       <h2 style={{ color: '#01b8d8' }}>Send a Message</h2>
 
       <img src='/request.png' alt='request' height={50} width={50} />
