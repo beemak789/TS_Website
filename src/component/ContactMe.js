@@ -76,7 +76,7 @@ export default ContactMe;
 
 const ConsultContactMeContainer = styled.div`
   display: flex;
-  gap: 4rem;
+  gap: 8rem;
   width: 100%;
   @media (min-width: 375px) and (max-width: 768px) {
     display: flex;
