@@ -20,7 +20,7 @@ const ContactMe = () => {
         <Divider
           style={{
             color: '#01b8d8',
-            fontWeight: '200',
+            fontWeight: '300',
             fontSize: '34px',
             width: '100%',
           }}
