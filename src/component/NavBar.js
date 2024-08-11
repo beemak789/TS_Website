@@ -55,7 +55,7 @@ const Navbar = () => {
               <Button
                 onClick={handleCloseNavMenu}
                 disableRipple={true}
-                style={{ backgroundColor: 'transparent', }}
+                style={{ backgroundColor: 'transparent' }}
               >
                 <Link spy={true} smooth={true} duration={500} to='nav'>
                   <LogoImg src='/logo.png'></LogoImg>
@@ -88,7 +88,6 @@ const Navbar = () => {
                   open={Boolean(anchorElNav)}
                   onClose={handleCloseNavMenu}
                   disableScrollLock={false}
-
                 >
                   {links.map(
                     (link, idx) =>
@@ -170,9 +169,8 @@ const NavBarContainer = styled.div`
   height: 350px;
 
   @media (min-width: 375px) and (max-width: 768px) {
-    width: 100%;
     height: 200px;
-    background-color: #FFD937;
+    background-color: #ffd937;
   }
 `;
 
@@ -184,6 +182,7 @@ const LogoImg = styled.img`
 `;
 const NavLinksContainer = styled(Box)`
   width: 100%;
+  max-width: 1100px;
   display: flex;
   color: black !important;
   justify-content: space-between;
@@ -198,10 +197,4 @@ const StyledLink = styled(Link)`
   font-family: 'Mulish';
   font-size: 20px;
   color: #000068;
-`;
-
-const FacebookIcon = styled.svg`
-  height: 1.2em;
-  width: 1.2em;
-  margin-top: -0.2rem;
 `;
