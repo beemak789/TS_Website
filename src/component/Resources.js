@@ -112,7 +112,7 @@ const Resources = () => {
                   {' '}
                   <a
                     className='link'
-                    href='autismsociety.org'
+                    href='https://autismsociety.org'
                     target='_blank'
                     rel='noreferrer'
                   >
