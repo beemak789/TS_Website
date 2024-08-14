@@ -23,23 +23,23 @@ const Form = () => {
     setIsLoading(true);
     try {
       e.preventDefault();
-      await fetch(
-        'https://yik3q4romd.execute-api.us-east-1.amazonaws.com/dev/contact-form',
-        {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            Accept: '*/*',
-          },
-          body: JSON.stringify({
-            name,
-            senderEmail: email,
-            receiverEmail: 'hello@teachingslp.com',
-            phoneNumber,
-            message,
-          }),
-        }
-      );
+      // await fetch(
+      //   'https://yik3q4romd.execute-api.us-east-1.amazonaws.com/dev/contact-form',
+      //   {
+      //     method: 'POST',
+      //     headers: {
+      //       'Content-Type': 'application/json',
+      //       Accept: '*/*',
+      //     },
+      //     body: JSON.stringify({
+      //       name,
+      //       senderEmail: email,
+      //       receiverEmail: 'hello@teachingslp.com',
+      //       phoneNumber,
+      //       message,
+      //     }),
+      //   }
+      // );
       console.log('submitted');
       setIsSubmitted(true);
       setIsLoading(false);
