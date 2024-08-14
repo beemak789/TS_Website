@@ -2,7 +2,6 @@ import React from 'react';
 import TableContainer from '@mui/material/TableContainer';
 import { createTheme, ThemeProvider } from '@mui/material';
 import styled from 'styled-components';
-import Accordion from '@mui/material/Accordion';
 
 const theme = createTheme({
   typography: {
@@ -190,55 +189,4 @@ const TableTitle = styled.p`
   text-align: center;
   margin: auto;
   padding: 1rem;
-`;
-
-const StyledAccordion = styled(Accordion)`
-  @media (min-width: 375px) and (max-width: 768px) {
-    padding: 1rem;
-  }
-
-  .request-eval-container {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-
-    .button {
-      height: 3rem;
-      width: 15rem;
-      font-size: 18px;
-      font-family: 'Solway' !important;
-      cursor: pointer;
-      background-color: #008080;
-      border-radius: 4px;
-      color: white;
-      margin-bottom: 1rem;
-      border: none;
-    }
-
-    .button:hover {
-      background-color: #00a2a2;
-    }
-  }
-`;
-
-const EvaluationProcessContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem;
-
-  p {
-    text-align: center;
-    font-size: 18px;
-  }
-
-  @media (min-width: 375px) and (max-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    .arrow-right {
-      transform: rotate(90deg);
-    }
-  }
 `;

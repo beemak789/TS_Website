@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Icon } from '@iconify/react';
 import styled from 'styled-components';
 import { Button } from '@mui/material';
 import { Link } from 'react-scroll';
@@ -130,33 +129,3 @@ const QuickLinksContainer = styled.div`
   }
 `;
 
-const IconContainers = styled.div`
-  display: flex;
-  gap: 1rem;
-  padding: 0.5rem;
-`;
-
-const ContactInfoContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  text-align: start;
-  padding: 2rem;
-  font-size: 20px;
-  margin: 1rem;
-  color: #01b8d8;
-
-  @media (min-width: 375px) and (max-width: 768px) {
-    display: flex;
-    align-items: start;
-  }
-
-  .info,
-  .address-container {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 18px;
-    color: black;
-    line-height: 2pt;
-  }
-`;

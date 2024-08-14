@@ -33,7 +33,7 @@ const Navbar = () => {
         color='transparent'
       >
         <BannerContainer>
-          <BannerLogo src='/banner.png' height={200} />
+          <BannerLogo src='/banner.png' height={200}  alt='banner-logo'/>
         </BannerContainer>
         <NavBarContainer>
           <WaveHeader xmlns='http://www.w3.org/2000/svg' viewBox='0 2 1440 320'>
@@ -58,7 +58,7 @@ const Navbar = () => {
                 style={{ backgroundColor: 'transparent' }}
               >
                 <Link spy={true} smooth={true} duration={500} to='nav'>
-                  <LogoImg src='/logo.png'></LogoImg>
+                  <LogoImg src='/logo.png' alt='logo'></LogoImg>
                 </Link>
               </Button>
 

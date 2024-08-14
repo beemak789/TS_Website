@@ -32,7 +32,7 @@ const AboutMe = () => {
       </AboutMeSection>
 
       <OurPhilosophyContainer>
-        <FamilyImg src='/office.jpg' />
+        <OfficeImg src='/office.jpg' alt='office-img'/>
         <PhilosophyText>
           <p className='header-2'>
             <b>Philosophy</b>
@@ -143,7 +143,7 @@ const OurPhilosophyContainer = styled.div`
   }
 `;
 
-const FamilyImg = styled.img`
+const OfficeImg = styled.img`
   width: 36%;
   border: 2px;
   border-radius: 5px;
