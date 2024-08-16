@@ -39,7 +39,7 @@ const Navbar = () => {
           <WaveHeader xmlns='http://www.w3.org/2000/svg' viewBox='0 2 1440 320'>
             <path
               fill='#FED32C'
-              fill-opacity='1'
+              fillOpacity='1'
               d='M0,192L48,202.7C96,213,192,235,288,213.3C384,192,480,128,576,128C672,128,768,192,864,208C960,224,1056,192,1152,170.7C1248,149,1344,139,1392,133.3L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z'
             ></path>
           </WaveHeader>
@@ -146,6 +146,7 @@ const BannerContainer = styled.div`
   border: none;
   @media (min-width: 375px) and (max-width: 768px) {
     width: 100%;
+
   }
 `;
 
