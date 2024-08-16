@@ -22,7 +22,7 @@ const TextContainer = styled.div`
   color: black;
   text-align: center;
   font-size: 18px;
-  background-color: #FFD937;
+  background-color: #FED32C;
 
   & p {
     padding: 10px;
