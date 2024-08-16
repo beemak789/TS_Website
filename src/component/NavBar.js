@@ -33,7 +33,7 @@ const Navbar = () => {
         color='transparent'
       >
         <BannerContainer>
-          <BannerLogo src='/banner.png' height={200} alt='banner-logo'/>
+          <BannerLogo src='/banner.png' height={200} alt='banner-logo' />
         </BannerContainer>
         <NavBarContainer>
           <WaveHeader xmlns='http://www.w3.org/2000/svg' viewBox='0 2 1440 320'>
@@ -56,10 +56,10 @@ const Navbar = () => {
                 onClick={handleCloseNavMenu}
                 disableRipple={true}
                 style={{ backgroundColor: 'transparent' }}
-                alt="main-logo"
+                alt='main-logo'
               >
                 <Link spy={true} smooth={true} duration={500} to='nav'>
-                  <LogoImg src='/logo-new.png' alt='logo' ></LogoImg>
+                  <LogoImg src='/logo-new.png' alt='logo'></LogoImg>
                 </Link>
               </Button>
 
@@ -71,7 +71,7 @@ const Navbar = () => {
                   aria-haspopup='true'
                   onClick={handleOpenNavMenu}
                   color='inherit'
-                  alt="menu-icon-nav"
+                  alt='menu-icon-nav'
                 >
                   <MenuIcon />
                 </IconButton>
@@ -117,7 +117,11 @@ const Navbar = () => {
 
               <NavLinksContainer className='nav-links-container'>
                 {links.map((link, idx) => (
-                  <Button key={idx} onClick={handleCloseNavMenu} alt="link-buttons">
+                  <Button
+                    key={idx}
+                    onClick={handleCloseNavMenu}
+                    alt='link-buttons'
+                  >
                     <StyledLink
                       spy={true}
                       smooth={true}
@@ -142,11 +146,10 @@ const BannerContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #FED32C;
+  background-color: #fed32c;
   border: none;
   @media (min-width: 375px) and (max-width: 768px) {
     width: 100%;
-
   }
 `;
 
@@ -174,7 +177,7 @@ const NavBarContainer = styled.div`
 
   @media (min-width: 375px) and (max-width: 768px) {
     height: 200px;
-    background-color: #FED32C;
+    background-color: #fed32c;
   }
 `;
 
@@ -184,6 +187,10 @@ const LogoImg = styled.img`
   width: 300px;
   margin-left: 1.5rem;
   top: 30px;
+
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    margin-left: 12rem;
+  }
 `;
 const NavLinksContainer = styled(Box)`
   width: 100%;

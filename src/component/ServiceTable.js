@@ -142,7 +142,6 @@ const PaymentContainer = styled.div`
 const LocationContainer = styled.div`
   display: flex;
   flex-direction: row;
-  align-items: center;
   font-size: 20px;
   font-weight: 100;
   gap: 2rem;
@@ -153,7 +152,6 @@ const LocationContainer = styled.div`
     flex-direction: row;
     align-items: center;
     gap: 1rem;
-    text-align: start;
   }
 
   @media (min-width: 375px) and (max-width: 768px) {
@@ -179,6 +177,9 @@ const ExpertiseContainer = styled.div`
     flex-direction: column;
     gap: 0rem;
     padding: 1rem;
+  }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    padding: 4rem;
   }
 `;
 
