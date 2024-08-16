@@ -4,16 +4,11 @@ import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import Divider from '@mui/material/Divider';
-
+import { StyledDivider } from '../shared/sharedComponents';
 const Resources = () => {
   return (
     <ResourcesContainer name='resources'>
-      <Divider
-        style={{ color: '#01b8d8', fontWeight: '200px', fontSize: '34px' }}
-      >
-        Resources
-      </Divider>
+      <StyledDivider>Resources</StyledDivider>
 
       <ResourcesList>
         <ResourceBox>

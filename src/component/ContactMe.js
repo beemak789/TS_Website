@@ -1,32 +1,17 @@
 import React from 'react';
 import Form from './Form';
 import styled from 'styled-components';
-import { createTheme, ThemeProvider } from '@mui/material';
-import Divider from '@mui/material/Divider';
 import { Icon } from '@iconify/react';
+import { StyledDivider } from '../shared/sharedComponents';
+import Divider from '@mui/material/Divider';
 
-const theme = createTheme({
-  typography: {
-    fontFamily: 'Solway',
-    fontWeightRegular: 100,
-    fontSize: 16,
-  },
-});
+
 
 const ContactMe = () => {
   return (
-    <ThemeProvider theme={theme}>
+
       <ContactMeContainer name='contactUs'>
-        <Divider
-          style={{
-            color: '#01b8d8',
-            fontWeight: '300',
-            fontSize: '34px',
-            width: '100%',
-          }}
-        >
-          Contact Me
-        </Divider>
+        <StyledDivider>Contact Me</StyledDivider>
 
         <ConsultContactMeContainer>
           <ContactTextboxContainer>
@@ -78,7 +63,7 @@ const ContactMe = () => {
           </FreeConsultContainer>
         </ConsultContactMeContainer>
       </ContactMeContainer>
-    </ThemeProvider>
+
   );
 };
 

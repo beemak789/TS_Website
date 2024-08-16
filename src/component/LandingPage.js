@@ -5,7 +5,6 @@ import Services from './Services';
 import ContactMe from './ContactMe';
 import Footer from './Footer';
 import Resources from './Resources';
-import FooterText from './FooterText';
 import styled from 'styled-components';
 
 const LandingPage = () => {
@@ -17,7 +16,7 @@ const LandingPage = () => {
       <Resources />
       <ContactMe />
       <Footer />
-      <FooterText />
+
     </MainPageContainer>
   );
 };

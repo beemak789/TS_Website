@@ -1,19 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const FooterText = () => {
+const DesignedByContainer = () => {
   return (
-    <FooterTextContainer>
+    <TextContainer>
       <p>&copy; 2024 Designed by Brandy Mak</p>
-    </FooterTextContainer>
+    </TextContainer>
   );
 };
 
-export default FooterText;
+export default DesignedByContainer;
 
 
 
-const FooterTextContainer = styled.div`
+const TextContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;

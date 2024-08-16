@@ -1,17 +1,13 @@
 import React from 'react';
-import Divider from '@mui/material/Divider';
 import styled from 'styled-components';
 import ServiceTable from './ServiceTable';
+import { StyledDivider } from '../shared/sharedComponents';
 
 const Services = () => {
   return (
     <ServicesContainer name='services'>
       <ServiceSection>
-        <Divider
-          style={{ color: '#01b8d8', fontWeight: '300', fontSize: '36px', marginBottom: '2rem' }}
-        >
-          Services
-        </Divider>
+        <StyledDivider style={{ marginBottom: '2rem' }}>Services</StyledDivider>
         <ServiceTable />
       </ServiceSection>
     </ServicesContainer>
