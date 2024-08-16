@@ -34,7 +34,7 @@ const Form = () => {
           body: JSON.stringify({
             name,
             senderEmail: email,
-            receiverEmail: `${process.env.REACT_APP_CONTACT_RECIPIENT}`,
+            receiverEmail: `${process.env.REACT_APP_CONTACT_EMAIL}`,
             phoneNumber,
             message,
           }),

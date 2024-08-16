@@ -5,65 +5,56 @@ import { Icon } from '@iconify/react';
 import { StyledDivider } from '../shared/sharedComponents';
 import Divider from '@mui/material/Divider';
 
-
-
 const ContactMe = () => {
   return (
+    <ContactMeContainer name='contactUs'>
+      <StyledDivider>Contact Me</StyledDivider>
 
-      <ContactMeContainer name='contactUs'>
-        <StyledDivider>Contact Me</StyledDivider>
+      <ConsultContactMeContainer>
+        <ContactTextboxContainer>
+          <Form />
+        </ContactTextboxContainer>
 
-        <ConsultContactMeContainer>
-          <ContactTextboxContainer>
-            <Form />
-          </ContactTextboxContainer>
+        <FreeConsultContainer>
+          <p className='consult-text'>
+            <h1>Free Consultation</h1>
+            We provide complimentary 15-minute phone consultations for new
+            clients. During this call, you can share details about your child,
+            ask questions regarding their speech, language, or learning
+            development, and discuss scheduling an initial appointment.
+          </p>
+          <Divider />
 
-          <FreeConsultContainer>
-            <p className='consult-text'>
-              <h1>Free Consultation</h1>
-              We provide complimentary 15-minute phone consultations for new
-              clients. During this call, you can share details about your child,
-              ask questions regarding their speech, language, or learning
-              development, and discuss scheduling an initial appointment.
-            </p>
-            <Divider />
+          <ContactDetailsContainer>
+            <NumberEmailContainer>
+              <h3>Contact Information</h3>
+              <a
+                className='instagram-icon'
+                href='https://www.instagram.com/teachingslp?igsh=ZXp2bnp0bGlyZGlz'
+              >
+                {' '}
+                <Icon icon='skill-icons:instagram' target='_blank' />
+                <p>Instagram</p>
+              </a>
 
-            <ContactDetailsContainer>
-              <NumberEmailContainer>
-                <h3>Contact Information</h3>
+              <div className='info'>
+                <img src='/phone.png' height={20} width={20} alt='phone-icon' />
+                <p style={{ color: '#01b8d8' }}>(330)-757-1302</p>
+              </div>
+              <div className='info email'>
+                <img src='/mail.png' height={28} width={28} alt='mail-icon' />
                 <a
-                  className='instagram-icon'
-                  href='https://www.instagram.com/teachingslp?igsh=ZXp2bnp0bGlyZGlz'
+                  href={`mailto:${process.env.REACT_APP_CONTACT_EMAIL}`}
+                  style={{ color: '#01b8d8' }}
                 >
-                  {' '}
-                  <Icon icon='skill-icons:instagram' target='_blank' />
-                  <p>Instagram</p>
+                  {process.env.REACT_APP_CONTACT_EMAIL}
                 </a>
-
-                <div className='info'>
-                  <img
-                    src='/phone.png'
-                    height={20}
-                    width={20}
-                    alt='phone-icon'
-                  />
-                  <p style={{ color: '#01b8d8' }}>(330)-757-1302</p>
-                </div>
-                <div className='info email'>
-                  <img src='/mail.png' height={28} width={28} alt='mail-icon' />
-                  <a
-                    href='mailto:bmak789@gmail.com'
-                    style={{ color: '#01b8d8' }}
-                  >
-                    hello@teachingslp.com
-                  </a>
-                </div>
-              </NumberEmailContainer>
-            </ContactDetailsContainer>
-          </FreeConsultContainer>
-        </ConsultContactMeContainer>
-      </ContactMeContainer>
-
+              </div>
+            </NumberEmailContainer>
+          </ContactDetailsContainer>
+        </FreeConsultContainer>
+      </ConsultContactMeContainer>
+    </ContactMeContainer>
   );
 };
 
