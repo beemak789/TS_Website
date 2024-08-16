@@ -19,6 +19,7 @@ export const MobileMenu = ({ handleOpenNavMenu, anchorElNav, handleCloseNavMenu}
         aria-haspopup='true'
         onClick={handleOpenNavMenu}
         color='inherit'
+        alt="mobile-icon"
       >
         <MenuIcon />
       </IconButton>

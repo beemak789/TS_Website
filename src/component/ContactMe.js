@@ -56,12 +56,22 @@ const ContactMe = () => {
                 </a>
 
                 <div className='info'>
-                  <img src='/phone.png' height={20} width={20} alt='phone-icon' />
+                  <img
+                    src='/phone.png'
+                    height={20}
+                    width={20}
+                    alt='phone-icon'
+                  />
                   <p style={{ color: '#01b8d8' }}>(330)-757-1302</p>
                 </div>
                 <div className='info email'>
                   <img src='/mail.png' height={28} width={28} alt='mail-icon' />
-                  <p style={{ color: '#01b8d8' }}>hello@teachingslp.com</p>
+                  <a
+                    href='mailto:bmak789@gmail.com'
+                    style={{ color: '#01b8d8' }}
+                  >
+                    hello@teachingslp.com
+                  </a>
                 </div>
               </NumberEmailContainer>
             </ContactDetailsContainer>

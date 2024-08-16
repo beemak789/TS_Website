@@ -40,7 +40,6 @@ const Form = () => {
           }),
         }
       );
-      console.log('submitted');
       setIsSubmitted(true);
       setIsLoading(false);
     } catch (error) {

@@ -33,7 +33,7 @@ const Navbar = () => {
         color='transparent'
       >
         <BannerContainer>
-          <BannerLogo src='/banner.png' height={200}  alt='banner-logo'/>
+          <BannerLogo src='/banner.png' height={200} alt='banner-logo'/>
         </BannerContainer>
         <NavBarContainer>
           <WaveHeader xmlns='http://www.w3.org/2000/svg' viewBox='0 2 1440 320'>
@@ -56,9 +56,10 @@ const Navbar = () => {
                 onClick={handleCloseNavMenu}
                 disableRipple={true}
                 style={{ backgroundColor: 'transparent' }}
+                alt="main-logo"
               >
                 <Link spy={true} smooth={true} duration={500} to='nav'>
-                  <LogoImg src='/logo.png' alt='logo'></LogoImg>
+                  <LogoImg src='/logo.png' alt='logo' ></LogoImg>
                 </Link>
               </Button>
 
@@ -70,6 +71,7 @@ const Navbar = () => {
                   aria-haspopup='true'
                   onClick={handleOpenNavMenu}
                   color='inherit'
+                  alt="menu-icon-nav"
                 >
                   <MenuIcon />
                 </IconButton>
@@ -115,7 +117,7 @@ const Navbar = () => {
 
               <NavLinksContainer className='nav-links-container'>
                 {links.map((link, idx) => (
-                  <Button key={idx} onClick={handleCloseNavMenu}>
+                  <Button key={idx} onClick={handleCloseNavMenu} alt="link-buttons">
                     <StyledLink
                       spy={true}
                       smooth={true}
@@ -175,6 +177,7 @@ const NavBarContainer = styled.div`
 `;
 
 const LogoImg = styled.img`
+  height: 100%;
   position: relative;
   width: 300px;
   margin-left: 1.5rem;

@@ -22,17 +22,17 @@ const AboutMe = () => {
               years of experience working with children with speech sound
               disorders, autism, fluency, developmental disabilities, receptive
               and expressive language disorders, language delay, and early
-              intervention services. I specialize in speech sounds disorders and early intervention,
-              and I am proudly a neurodiversity-affirming therapist! In my free
-              time, I love spending time with my family and friends, cooking,
-              trying local restaurants, and traveling!
+              intervention services. I specialize in speech sounds disorders and
+              early intervention, and I am proudly a neurodiversity-affirming
+              therapist! In my free time, I love spending time with my family
+              and friends, cooking, trying local restaurants, and traveling!
             </p>
           </div>
         </AboutMeParagraphContainer>
       </AboutMeSection>
 
       <OurPhilosophyContainer>
-        <OfficeImg src='/office.jpg' alt='office-img'/>
+        <OfficeImg src='/office.jpg' alt='office-img' />
         <PhilosophyText>
           <p className='header-2'>
             <b>Philosophy</b>
@@ -54,7 +54,6 @@ const AboutMe = () => {
           </p>
         </PhilosophyText>
       </OurPhilosophyContainer>
-
     </AboutMeContainer>
   );
 };
@@ -88,6 +87,7 @@ const AboutMeSection = styled.div`
 `;
 
 const ProfileImg = styled.img`
+  height: 100%;
   width: 36%;
   border-radius: 5px;
   margin-top: -0.5rem;
@@ -144,6 +144,7 @@ const OurPhilosophyContainer = styled.div`
 `;
 
 const OfficeImg = styled.img`
+  height: 100%;
   width: 36%;
   border: 2px;
   border-radius: 5px;

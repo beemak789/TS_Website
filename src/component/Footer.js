@@ -18,6 +18,7 @@ const Footer = () => {
             onClick={handleCloseNavMenu}
             disableRipple={true}
             style={{ backgroundColor: 'transparent' }}
+            alt="icon-logo"
           >
             <Link spy={true} smooth={true} duration={500} to='nav'>
               <LogoImage
