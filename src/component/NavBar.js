@@ -143,6 +143,7 @@ const BannerContainer = styled.div`
   display: flex;
   justify-content: center;
   background-color: #FED32C;
+  border: none;
   @media (min-width: 375px) and (max-width: 768px) {
     width: 100%;
   }
@@ -172,7 +173,7 @@ const NavBarContainer = styled.div`
 
   @media (min-width: 375px) and (max-width: 768px) {
     height: 200px;
-    background-color: #ffd937;
+    background-color: #FED32C;
   }
 `;
 

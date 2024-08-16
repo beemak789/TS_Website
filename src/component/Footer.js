@@ -130,7 +130,7 @@ const QuickLinksContainer = styled.div`
 
   .link:hover {
     cursor: pointer;
-    color: #ffd937;
+    color: #FED32C;
   }
 `;
 
