@@ -25,180 +25,145 @@ const Navbar = () => {
   };
 
   return (
-    <>
-      <AppBar
-        position='static'
-        className='nav-bar-container'
-        name='nav'
-        color='transparent'
-      >
-        <BannerContainer>
-          <BannerLogo src='/banner.png' height={200} alt='banner-logo' />
-        </BannerContainer>
-        <NavBarContainer>
-          <WaveHeader xmlns='http://www.w3.org/2000/svg' viewBox='0 2 1440 320'>
-            <path
-              fill='#FED32C'
-              fillOpacity='1'
-              d='M0,192L48,202.7C96,213,192,235,288,213.3C384,192,480,128,576,128C672,128,768,192,864,208C960,224,1056,192,1152,170.7C1248,149,1344,139,1392,133.3L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z'
-            ></path>
-          </WaveHeader>
+    <NavBarContainer>
+      <YellowLineContainer className='yello-container' />
+      <ToolbarContainer>
+        <Link to='nav'>
+          <LogoImg src='/white-slp-logo.png' alt='logo'></LogoImg>
+        </Link>
 
-          <Container maxWidth='xl' style={{ position: 'absolute' }}>
-            <Toolbar
-              disableGutters
-              sx={{
-                width: '100%',
-                mx: 'auto',
-              }}
-            >
-              <Button
-                onClick={handleCloseNavMenu}
-                disableRipple={true}
-                style={{ backgroundColor: 'transparent' }}
-                alt='main-logo'
-              >
-                <Link spy={true} smooth={true} duration={500} to='nav'>
-                  <LogoImg src='/logo-new.png' alt='logo'></LogoImg>
-                </Link>
-              </Button>
+        <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+          <Hamburger
+            size='large'
+            aria-label='account of current user'
+            aria-controls='menu-appbar'
+            aria-haspopup='true'
+            onClick={handleOpenNavMenu}
+            color='inherit'
+            alt='menu-icon-nav'
+          >
+            <MenuIcon />
+          </Hamburger>
 
-              <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-                <IconButton
-                  size='large'
-                  aria-label='account of current user'
-                  aria-controls='menu-appbar'
-                  aria-haspopup='true'
-                  onClick={handleOpenNavMenu}
-                  color='inherit'
-                  alt='menu-icon-nav'
-                >
-                  <MenuIcon />
-                </IconButton>
-
-                <Menu
-                  id='menu-appbar'
-                  anchorEl={anchorElNav}
-                  anchorOrigin={{
-                    vertical: 'top',
-                    horizontal: 'left',
-                  }}
-                  transformOrigin={{
-                    vertical: 'top',
-                    horizontal: 'left',
-                  }}
-                  open={Boolean(anchorElNav)}
-                  onClose={handleCloseNavMenu}
-                  disableScrollLock={false}
-                >
-                  {links.map(
-                    (link, idx) =>
-                      idx > 0 && (
-                        <MenuItem
-                          key={idx}
-                          onClick={handleCloseNavMenu}
-                          onBlur={handleCloseNavMenu}
-                        >
-                          <Typography>
-                            <Link
-                              spy={true}
-                              smooth={true}
-                              duration={500}
-                              to={link.to}
-                            >
-                              {link.name}
-                            </Link>
-                          </Typography>
-                        </MenuItem>
-                      )
-                  )}
-                </Menu>
-              </Box>
-
-              <NavLinksContainer className='nav-links-container'>
-                {links.map((link, idx) => (
-                  <Button
+          <Menu
+            id='menu-appbar'
+            anchorEl={anchorElNav}
+            anchorOrigin={{
+              vertical: 'top',
+              horizontal: 'left',
+            }}
+            transformOrigin={{
+              vertical: 'top',
+              horizontal: 'left',
+            }}
+            open={Boolean(anchorElNav)}
+            onClose={handleCloseNavMenu}
+            disableScrollLock={false}
+          >
+            {links.map(
+              (link, idx) =>
+                idx > 0 && (
+                  <MenuItem
                     key={idx}
                     onClick={handleCloseNavMenu}
-                    alt='link-buttons'
+                    onBlur={handleCloseNavMenu}
                   >
-                    <StyledLink
-                      spy={true}
-                      smooth={true}
-                      duration={500}
-                      to={link.to}
-                    >
-                      {link.name}
-                    </StyledLink>
-                  </Button>
-                ))}
-              </NavLinksContainer>
-            </Toolbar>
-          </Container>
-        </NavBarContainer>
-      </AppBar>
-    </>
+                    <Typography>
+                      <Link
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                        to={link.to}
+                      >
+                        {link.name}
+                      </Link>
+                    </Typography>
+                  </MenuItem>
+                )
+            )}
+          </Menu>
+        </Box>
+
+        <NavLinksContainer className='nav-links-container'>
+          {links.map((link, idx) => (
+            <Button key={idx} onClick={handleCloseNavMenu} alt='link-buttons'>
+              <StyledLink spy={true} smooth={true} duration={500} to={link.to}>
+                {link.name}
+              </StyledLink>
+            </Button>
+          ))}
+        </NavLinksContainer>
+      </ToolbarContainer>
+    </NavBarContainer>
   );
 };
 export default Navbar;
 
-const BannerContainer = styled.div`
-  width: 100%;
+const YellowLineContainer = styled.div`
   display: flex;
+  align-items: center;
   justify-content: center;
+  width: 100%;
+  height: 60px;
+  color: black;
+  text-align: center;
+  font-size: 18px;
   background-color: #fed32c;
-  border: none;
-  @media (min-width: 375px) and (max-width: 768px) {
-    width: 100%;
-  }
-`;
-
-const WaveHeader = styled.svg`
-  @media (min-width: 375px) and (max-width: 768px) {
-    display: none;
-  }
-`;
-
-const BannerLogo = styled.img`
-  height: 100px;
-
-  @media (min-width: 375px) and (max-width: 768px) {
-    height: 50px;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin-top: 2rem;
-  }
 `;
 
 const NavBarContainer = styled.div`
   display: flex;
   flex-direction: column;
-  height: 350px;
 
   @media (min-width: 375px) and (max-width: 768px) {
-    height: 200px;
-    background-color: #fed32c;
+    background-color: white;
   }
 `;
 
+const Hamburger = styled(IconButton)`
+  @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+    * {
+      display: none;
+    }
+  }
+`;
 const LogoImg = styled.img`
   height: 100%;
-  position: relative;
-  width: 300px;
+  width: 19rem;
   margin-left: 1.5rem;
-  top: 30px;
+  top: 70px;
+
+  @media only screen and (min-device-width: 375px) and (max-device-width: 768px) {
+    width: 40%;
+    position: inherit;
+    margin-left: 0;
+  }
 
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     margin-left: 12rem;
   }
 `;
+
+const ToolbarContainer = styled.div`
+  display: flex;
+  width: 100%;
+  max-height: 350px;
+  border-bottom: 1px solid blue;
+
+  @media only screen and (min-device-width: 375px) and (max-device-width: 768px) {
+    position: inherit;
+    margin-left: 0;
+  }
+`;
+
 const NavLinksContainer = styled(Box)`
   width: 100%;
   max-width: 1100px;
   display: flex;
   color: black !important;
   justify-content: space-between;
-  margin-top: -1rem;
+  align-items: center;
+
   @media (min-width: 375px) and (max-width: 768px) {
     display: none;
   }

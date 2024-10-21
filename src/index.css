@@ -1,6 +1,5 @@
-body {
-  font-family: "Mulish", serif;
-  font-style: normal;
+body, html {
+  border: 0;
   padding: 0;
   margin: 0;
 }
