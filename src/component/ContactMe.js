@@ -20,7 +20,7 @@ const ContactMe = () => {
           <Form />
         </ContactTextboxContainer>
 
-        <FreeConsultContainer>
+        <FreeConsultContainer name="consult">
           <p className='consult-text'>
             <StyledHeader>Free Consultation</StyledHeader>
             <p>Click {hereLink} to book a free 15- minute consultation. </p>

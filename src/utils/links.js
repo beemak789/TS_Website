@@ -21,10 +21,7 @@ export const links = [
   },
 
   {
-    to: 'contactUs',
+    to: 'consult',
     name: 'Book',
   },
-
-
-
 ];
