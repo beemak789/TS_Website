@@ -48,7 +48,7 @@ const Navbar = () => {
             color='inherit'
             alt='menu-icon-nav'
           >
-            <MenuIcon />
+            <MenuIcon style={{marginRight: '1rem'}}/>
           </Hamburger>
 
           <Menu
@@ -119,7 +119,7 @@ const YellowLineContainer = styled.div`
   span {
     color: #01b8d8;
     padding: 0.5rem;
-    font-size: 18px;
+    font-size: 20px;
     margin-left: 2rem;
     font-weight: 500;
 
@@ -154,7 +154,7 @@ const LogoImg = styled.img`
   @media only screen and (min-device-width: 375px) and (max-device-width: 768px) {
     width: 40%;
     position: inherit;
-    margin-left: 0;
+    margin-left: 1rem;
   }
 
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
