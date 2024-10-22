@@ -6,6 +6,11 @@ import { StyledDivider } from '../shared/sharedComponents';
 import Divider from '@mui/material/Divider';
 
 const ContactMe = () => {
+  const hereLink = (
+    <span>
+      <a href='https://calendly.com/hello-teachingslp'>here</a>
+    </span>
+  );
   return (
     <ContactMeContainer name='contactUs'>
       <StyledDivider>Contact Me</StyledDivider>
@@ -18,17 +23,10 @@ const ContactMe = () => {
         <FreeConsultContainer>
           <p className='consult-text'>
             <StyledHeader>Free Consultation</StyledHeader>
-            Click here to book a free 15- minute consultation
-            <a
-              href='https://calendly.com/hello-teachingslp'
-              style={{ textDecoration: 'none' }}
-            >
-              {' '}
-              <p> here;&nbsp</p>
-            </a>
-            During this call, you can share details about your child, ask
+            <p>Click {hereLink} to book a free 15- minute consultation. </p>
+            <p>During this call, you can share details about your child, ask
             questions regarding their speech, language, or learning development,
-            and discuss scheduling an initial appointment.
+            and discuss scheduling an initial appointment.</p>
           </p>
           <Divider />
 
