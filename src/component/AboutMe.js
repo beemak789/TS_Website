@@ -110,6 +110,7 @@ const ProfileImg = styled.img`
 const AboutMeParagraphContainer = styled.div`
   display: flex;
   flex-direction: column;
+  font-size: 22px;
 
   .clinician-header-container {
     font-size: 30px;
@@ -126,15 +127,25 @@ const AboutMeParagraphContainer = styled.div`
       margin-left: 1rem;
       color: #01b8d8;
     }
+
+    @media (min-width: 375px) and (max-width: 768px) {
+    text-align: center;
+  }
   }
   .paragraph {
     padding: 1.2rem;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 22pt;
     font-weight: 100;
     text-align: start;
     margin-top: -2rem;
+
+    @media (min-width: 375px) and (max-width: 768px) {
+    text-align: center;
   }
+  }
+
+
 `;
 
 const OurPhilosophyContainer = styled.div`
@@ -184,7 +195,7 @@ const AllBrainsImg = styled.img`
   height: 44%;
   width: 34%;
   object-fit: cover;
-  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.04);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
   border-radius: 0.4rem;
 
   @media (min-width: 375px) and (max-width: 768px) {
