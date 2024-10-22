@@ -18,10 +18,10 @@ const ContactMe = () => {
         <FreeConsultContainer>
           <p className='consult-text'>
             <StyledHeader>Free Consultation</StyledHeader>
-            We provide complimentary 15-minute phone consultations for new
-            clients. During this call, you can share details about your child,
-            ask questions regarding their speech, language, or learning
-            development, and discuss scheduling an initial appointment.
+            Click here to book a free 15- minute consultation: here. During this
+            call, you can share details about your child, ask questions
+            regarding their speech, language, or learning development, and
+            discuss scheduling an initial appointment.
           </p>
           <Divider />
 
@@ -71,8 +71,8 @@ const ConsultContactMeContainer = styled.div`
 `;
 
 const StyledHeader = styled.p`
-font-size: 30px;
-`
+  font-size: 30px;
+`;
 
 const ContactMeContainer = styled.div`
   display: flex;

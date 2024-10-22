@@ -148,11 +148,12 @@ const ToolbarContainer = styled.div`
   display: flex;
   width: 100%;
   max-height: 350px;
-  border-bottom: 1px solid blue;
+  box-shadow: 0 3px 3px -2px lightgray;
+
 
   @media only screen and (min-device-width: 375px) and (max-device-width: 768px) {
     position: inherit;
-    margin-left: 0;
+    ${'' /* margin-left: 0; */}
   }
 `;
 
@@ -163,6 +164,7 @@ const NavLinksContainer = styled(Box)`
   color: black !important;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem;
 
   @media (min-width: 375px) and (max-width: 768px) {
     display: none;
