@@ -28,8 +28,8 @@ const Navbar = () => {
     <NavBarContainer>
       <YellowLineContainer className='yello-container'>
         <div>
-          <span>(937)-369-6613</span>
-          <span>amye@fullbloomspeechlanguagepathology.com</span>
+          <span>(330)-757-1302</span>
+          <span>hello@teachingslp.com</span>
           <span></span>
         </div>
       </YellowLineContainer>
@@ -116,13 +116,12 @@ const YellowLineContainer = styled.div`
   font-size: 18px;
   background-color: #fed32c;
 
-
   span {
-    color: white;
+    color: #01b8d8;
     padding: 0.5rem;
-    font-size: 15px;
+    font-size: 18px;
     margin-left: 2rem;
-    font-weight: 100;
+    font-weight: 500;
   }
 `;
 
