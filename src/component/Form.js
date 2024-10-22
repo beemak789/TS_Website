@@ -52,6 +52,10 @@ const Form = () => {
   return (
     <FormContainer onSubmit={submitForm} className='form-container'>
       <h2 style={{ color: '#01b8d8' }}>Send a Message</h2>
+      <h3>
+        Fill out the form or reach out directly. We look forward to connecting
+        with you!
+      </h3>
 
       <img src='/request.png' alt='request' height={50} width={50} />
       <InputFieldContainer>
@@ -137,6 +141,7 @@ const FormContainer = styled.form`
   h3 {
     font-size: 22px;
     color: #8e3e63;
+    text-align: center;
   }
 
   .status-messsage {

@@ -1,4 +1,8 @@
-
+body {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
 
 .App {
   text-align: center;
@@ -38,9 +42,3 @@
     transform: rotate(360deg);
   }
 }
-
-
-
-
-
-

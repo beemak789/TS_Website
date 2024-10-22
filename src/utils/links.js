@@ -20,4 +20,11 @@ export const links = [
     name: 'Contact Me',
   },
 
+  {
+    to: 'contactUs',
+    name: 'Book',
+  },
+
+
+
 ];

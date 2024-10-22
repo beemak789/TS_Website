@@ -1,3 +1,4 @@
+import { Divider } from '@mui/material';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -5,7 +6,7 @@ const AboutMe = () => {
   return (
     <AboutMeContainer name='aboutUs'>
       <AboutMeSection>
-        <ProfileImg src='/profile.jpg' alt='profile-pic'></ProfileImg>
+        <ProfileImg src='/main.jpg' alt='profile-pic'></ProfileImg>
         <AboutMeParagraphContainer>
           <div className='clinician-header-container'>
             <p className='clinician-name'>Tinetta Serdinak MA, CCC-SLP</p>
@@ -30,9 +31,10 @@ const AboutMe = () => {
           </div>
         </AboutMeParagraphContainer>
       </AboutMeSection>
+      <Divider />
 
       <OurPhilosophyContainer>
-        <OfficeImg src='/office.jpg' alt='office-img' />
+
         <PhilosophyText>
           <p className='header-2'>
             <b>Philosophy</b>
@@ -44,6 +46,8 @@ const AboutMe = () => {
             impact on child development, learning, confidence, and well-being.
           </p>
 
+          <OfficeImg src='office.jpg' alt='office' />
+
           <p className='header-3'>
             <b>Mission</b>
           </p>
@@ -53,6 +57,7 @@ const AboutMe = () => {
             how to support their child's communication skills.
           </p>
         </PhilosophyText>
+        <AllBrainsImg src='allbrains.jpg' alt='all-brains' />
       </OurPhilosophyContainer>
     </AboutMeContainer>
   );
@@ -87,16 +92,18 @@ const AboutMeSection = styled.div`
 `;
 
 const ProfileImg = styled.img`
-  height: 100%;
-  width: 36%;
+  height: 60%;
+  width: 26%;
   border-radius: 5px;
   margin-top: -0.5rem;
   padding: 1.5rem;
+  object-fit: cover;
 
   @media (min-width: 375px) and (max-width: 768px) {
-    width: 90%;
+    height: 90%;
+    width: 70%;
+    margin-top: -5rem;
     object-fit: cover;
-    height: auto;
   }
 `;
 
@@ -134,6 +141,7 @@ const OurPhilosophyContainer = styled.div`
   display: flex;
   background-color: white;
   padding: 2rem;
+  gap: 2rem;
 
   @media (min-width: 375px) and (max-width: 768px) {
     display: flex;
@@ -143,38 +151,24 @@ const OurPhilosophyContainer = styled.div`
   }
 `;
 
-const OfficeImg = styled.img`
-  height: 100%;
-  width: 36%;
-  border: 2px;
-  border-radius: 5px;
-  padding: 1.5rem;
-
-  @media (min-width: 375px) and (max-width: 768px) {
-    width: 90%;
-    object-fit: cover;
-    height: auto;
-  }
-`;
-
 const PhilosophyText = styled.div`
-  font-size: 24px;
+  font-size: 22px;
   padding: 1.2rem;
   line-height: 22pt;
   font-weight: 100;
-  text-align: start;
+  text-align: center;
   margin-left: 1.2rem;
-  margin-top: 1.5rem;
+  height: fit-content;
 
   .header-2 {
     font-size: 28px;
-    text-align: start;
+    text-align: center;
     color: #01b8d8;
   }
 
   .header-3 {
     font-size: 28px;
-    text-align: start;
+    text-align: center;
     color: #01b8d8;
     margin-top: 4rem;
   }
@@ -183,5 +177,33 @@ const PhilosophyText = styled.div`
     width: 90%;
     height: 90%;
     margin: auto;
+  }
+`;
+
+const AllBrainsImg = styled.img`
+  height: 44%;
+  width: 34%;
+  object-fit: cover;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.04);
+  border-radius: 0.4rem;
+
+  @media (min-width: 375px) and (max-width: 768px) {
+    height: 90%;
+    width: 70%;
+    object-fit: cover;
+  }
+`;
+const OfficeImg = styled.img`
+  height: 55%;
+  width: 45%;
+  margin-top: 1rem;
+  border-radius: 0.3rem;
+  object-fit: cover;
+  box-shadow: 0px 12px 28px 0px rgba(140, 149, 159, 0.3);
+
+  @media (min-width: 375px) and (max-width: 768px) {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
 `;

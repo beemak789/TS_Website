@@ -6,6 +6,11 @@ import { StyledDivider } from '../shared/sharedComponents';
 import Divider from '@mui/material/Divider';
 
 const ContactMe = () => {
+  const hereLink = (
+    <span>
+      <a href='https://calendly.com/hello-teachingslp'>here</a>
+    </span>
+  );
   return (
     <ContactMeContainer name='contactUs'>
       <StyledDivider>Contact Me</StyledDivider>
@@ -18,10 +23,10 @@ const ContactMe = () => {
         <FreeConsultContainer>
           <p className='consult-text'>
             <StyledHeader>Free Consultation</StyledHeader>
-            We provide complimentary 15-minute phone consultations for new
-            clients. During this call, you can share details about your child,
-            ask questions regarding their speech, language, or learning
-            development, and discuss scheduling an initial appointment.
+            <p>Click {hereLink} to book a free 15- minute consultation. </p>
+            <p>During this call, you can share details about your child, ask
+            questions regarding their speech, language, or learning development,
+            and discuss scheduling an initial appointment.</p>
           </p>
           <Divider />
 
@@ -71,8 +76,8 @@ const ConsultContactMeContainer = styled.div`
 `;
 
 const StyledHeader = styled.p`
-font-size: 30px;
-`
+  font-size: 30px;
+`;
 
 const ContactMeContainer = styled.div`
   display: flex;
@@ -106,7 +111,7 @@ const FreeConsultContainer = styled.div`
     padding-bottom: 1rem;
 
     @media (min-width: 375px) and (max-width: 768px) {
-      margin-top: 0;
+      margin-top: -7rem;
       padding: 2rem;
     }
   }
@@ -126,6 +131,7 @@ const ContactTextboxContainer = styled.div`
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   margin-top: 3rem;
+  padding: 2rem;
 
   @media (min-width: 375px) and (max-width: 768px) {
     display: flex;
