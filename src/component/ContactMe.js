@@ -18,10 +18,17 @@ const ContactMe = () => {
         <FreeConsultContainer>
           <p className='consult-text'>
             <StyledHeader>Free Consultation</StyledHeader>
-            Click here to book a free 15- minute consultation: here. During this
-            call, you can share details about your child, ask questions
-            regarding their speech, language, or learning development, and
-            discuss scheduling an initial appointment.
+            Click here to book a free 15- minute consultation
+            <a
+              href='https://calendly.com/hello-teachingslp'
+              style={{ textDecoration: 'none' }}
+            >
+              {' '}
+              <p> here;&nbsp</p>
+            </a>
+            During this call, you can share details about your child, ask
+            questions regarding their speech, language, or learning development,
+            and discuss scheduling an initial appointment.
           </p>
           <Divider />
 
@@ -106,7 +113,7 @@ const FreeConsultContainer = styled.div`
     padding-bottom: 1rem;
 
     @media (min-width: 375px) and (max-width: 768px) {
-      margin-top: 0;
+      margin-top: -7rem;
       padding: 2rem;
     }
   }

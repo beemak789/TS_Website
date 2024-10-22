@@ -26,7 +26,13 @@ const Navbar = () => {
 
   return (
     <NavBarContainer>
-      <YellowLineContainer className='yello-container' />
+      <YellowLineContainer className='yello-container'>
+        <div>
+          <span>(937)-369-6613</span>
+          <span>amye@fullbloomspeechlanguagepathology.com</span>
+          <span></span>
+        </div>
+      </YellowLineContainer>
       <ToolbarContainer>
         <Link to='nav'>
           <LogoImg src='/white-slp-logo.png' alt='logo'></LogoImg>
@@ -109,6 +115,15 @@ const YellowLineContainer = styled.div`
   text-align: center;
   font-size: 18px;
   background-color: #fed32c;
+
+
+  span {
+    color: white;
+    padding: 0.5rem;
+    font-size: 15px;
+    margin-left: 2rem;
+    font-weight: 100;
+  }
 `;
 
 const NavBarContainer = styled.div`
@@ -149,7 +164,6 @@ const ToolbarContainer = styled.div`
   width: 100%;
   max-height: 350px;
   box-shadow: 0 3px 3px -2px lightgray;
-
 
   @media only screen and (min-device-width: 375px) and (max-device-width: 768px) {
     position: inherit;

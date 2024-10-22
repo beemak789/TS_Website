@@ -31,12 +31,11 @@ const AboutMe = () => {
           </div>
         </AboutMeParagraphContainer>
       </AboutMeSection>
-      <Divider/>
+      <Divider />
 
       <OurPhilosophyContainer>
-      <AllBrainsImg src="allbrains.jpg" alt="all-brains"/>
+        <AllBrainsImg src='allbrains.jpg' alt='all-brains' />
         <PhilosophyText>
-
           <p className='header-2'>
             <b>Philosophy</b>
           </p>
@@ -47,7 +46,7 @@ const AboutMe = () => {
             impact on child development, learning, confidence, and well-being.
           </p>
 
-          <OfficeImg src="office.jpg" alt="office"/>
+          <OfficeImg src='office.jpg' alt='office' />
 
           <p className='header-3'>
             <b>Mission</b>
@@ -57,11 +56,8 @@ const AboutMe = () => {
             will love and grow from and empower parents with the knowledge of
             how to support their child's communication skills.
           </p>
-
         </PhilosophyText>
-
       </OurPhilosophyContainer>
-
     </AboutMeContainer>
   );
 };
@@ -100,11 +96,13 @@ const ProfileImg = styled.img`
   border-radius: 5px;
   margin-top: -0.5rem;
   padding: 1.5rem;
+  object-fit: cover;
 
   @media (min-width: 375px) and (max-width: 768px) {
     height: 90%;
     width: 70%;
     margin-top: -5rem;
+    object-fit: cover;
   }
 `;
 
@@ -181,26 +179,27 @@ const PhilosophyText = styled.div`
   }
 `;
 
-
-
 const AllBrainsImg = styled.img`
-height: 44%;
-width: 34%;
+  height: 44%;
+  width: 34%;
+  object-fit: cover;
 
-@media (min-width: 375px) and (max-width: 768px) {
+  @media (min-width: 375px) and (max-width: 768px) {
     height: 90%;
     width: 70%;
     object-fit: cover;
   }
-`
+`;
 const OfficeImg = styled.img`
   height: 50%;
   width: 40%;
   margin-top: 1rem;
   border-radius: 0.3rem;
+  object-fit: cover;
 
   @media (min-width: 375px) and (max-width: 768px) {
     height: 100%;
     width: 100%;
+    object-fit: cover;
   }
-`
+`;
