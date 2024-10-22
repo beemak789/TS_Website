@@ -122,6 +122,10 @@ const YellowLineContainer = styled.div`
     font-size: 18px;
     margin-left: 2rem;
     font-weight: 500;
+
+    @media (min-width: 375px) and (max-width: 768px) {
+    font-size: 12px;
+  }
   }
 `;
 
