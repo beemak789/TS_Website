@@ -195,7 +195,6 @@ const AllBrainsImg = styled.img`
   height: 44%;
   width: 34%;
   object-fit: cover;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
   border-radius: 0.4rem;
 
   @media (min-width: 375px) and (max-width: 768px) {

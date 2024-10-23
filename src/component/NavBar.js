@@ -1,12 +1,9 @@
 import React, { useState } from 'react';
-import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
-import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { Link } from 'react-scroll';
@@ -38,7 +35,7 @@ const Navbar = () => {
           <LogoImg src='/white-slp-logo.png' alt='logo'></LogoImg>
         </Link>
 
-        <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+        <StyledBox>
           <Hamburger
             size='large'
             aria-label='account of current user'
@@ -48,9 +45,8 @@ const Navbar = () => {
             color='inherit'
             alt='menu-icon-nav'
           >
-            <MenuIcon style={{marginRight: '1rem'}}/>
+            <MenuIcon className='menu-icon'/>
           </Hamburger>
-
           <Menu
             id='menu-appbar'
             anchorEl={anchorElNav}
@@ -88,7 +84,7 @@ const Navbar = () => {
                 )
             )}
           </Menu>
-        </Box>
+        </StyledBox>
 
         <NavLinksContainer className='nav-links-container'>
           {links.map((link, idx) => (
@@ -124,27 +120,37 @@ const YellowLineContainer = styled.div`
     font-weight: 500;
 
     @media (min-width: 375px) and (max-width: 768px) {
-    font-size: 12px;
-  }
+      font-size: 12px;
+    }
   }
 `;
 
 const NavBarContainer = styled.div`
   display: flex;
   flex-direction: column;
-
-  @media (min-width: 375px) and (max-width: 768px) {
-    background-color: white;
-  }
 `;
 
 const Hamburger = styled(IconButton)`
-  @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
-    * {
+  .menu-icon {
+    font-size: 2rem;
+  }
+
+  @media (min-width: 1043px) {
+    .menu-icon {
       display: none;
     }
   }
+
+  @media (min-width: 650px) {
+    .menu-icon {
+      font-size: 3rem;
+    }
+  }
 `;
+
+const StyledBox = styled(Box)`
+  margin-right: 1rem;
+`
 const LogoImg = styled.img`
   height: 100%;
   width: 19rem;
@@ -153,25 +159,17 @@ const LogoImg = styled.img`
 
   @media only screen and (min-device-width: 375px) and (max-device-width: 768px) {
     width: 40%;
-    position: inherit;
-    margin-left: 1rem;
   }
 
-  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    margin-left: 12rem;
-  }
 `;
 
 const ToolbarContainer = styled.div`
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   max-height: 350px;
   box-shadow: 0 3px 3px -2px lightgray;
-
-  @media only screen and (min-device-width: 375px) and (max-device-width: 768px) {
-    position: inherit;
-    ${'' /* margin-left: 0; */}
-  }
 `;
 
 const NavLinksContainer = styled(Box)`
@@ -183,7 +181,7 @@ const NavLinksContainer = styled(Box)`
   align-items: center;
   padding: 1rem;
 
-  @media (min-width: 375px) and (max-width: 768px) {
+  @media (min-width: 375px) and (max-width: 1042px) {
     display: none;
   }
 `;
