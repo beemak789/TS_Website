@@ -2,9 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 
 const DesignedByContainer = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <TextContainer>
-      <p>&copy; 2024 Designed by Brandy Mak</p>
+      <p>&copy; 2024-{currentYear} Designed by Brandy Mak</p>
     </TextContainer>
   );
 };

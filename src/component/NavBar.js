@@ -23,13 +23,6 @@ const Navbar = () => {
 
   return (
     <NavBarContainer>
-      <YellowLineContainer className='yello-container'>
-        <div>
-          <span>(330)-757-1302</span>
-          <span>hello@teachingslp.com</span>
-          <span></span>
-        </div>
-      </YellowLineContainer>
       <ToolbarContainer>
         <Link to='nav'>
           <LogoImg src='/white-slp-logo.png' alt='logo'></LogoImg>
