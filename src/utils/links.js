@@ -20,4 +20,8 @@ export const links = [
     name: 'Contact Me',
   },
 
+  {
+    to: 'consult',
+    name: 'Book',
+  },
 ];
